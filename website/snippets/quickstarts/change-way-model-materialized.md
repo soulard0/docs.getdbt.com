@@ -26,7 +26,7 @@ By default, everything gets created as a view. You can override that at the dire
       </File>
     - Click **Save**.
 
-2. Enter the `dbt run` command. Your `customers` model should now be built as a table!
+2. Enter the `dbt run --full-refresh` command. Your `customers` model should now be built as a table!
     :::info
     To do this, dbt had to first run a `drop view` statement (or API call on BigQuery), then a `create table as` statement.
     :::
